@@ -1,1 +1,10 @@
+body {
+    background: linear-gradient(90deg, rgba(241,171,9,1) 0%, rgba(229,92,7,1) 100%);
+}
+* {box-sizing: border-box;}
 
+.wrapper {
+    display: flex;
+    width: 80%;
+    align-self: center;
+}
