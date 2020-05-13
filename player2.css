@@ -5,9 +5,6 @@ body {
 h1 {
     text-align: center;
 }
-h3 {
-    font-size: xx-large;
-}
 
 .container {
     display: flex;
@@ -16,7 +13,7 @@ h3 {
     justify-content: space-evenly;
 }
 
-.wrapper {
+.wrapper1, .wrapper2 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -29,12 +26,4 @@ h3 {
 button {
     max-width: 150px;
     align-self: center;
-    font-size: larger;
-    margin: 20px;
-    padding: 10px;
-}
-
-p {
-    font-size: x-large;
-    font-weight: bold;
 }
