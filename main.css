@@ -38,3 +38,7 @@ p {
     font-size: x-large;
     font-weight: bold;
 }
+
+img {
+    border-radius: 5%;
+}

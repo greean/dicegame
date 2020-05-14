@@ -1,7 +1,8 @@
 // variables
 const image = document.getElementById("image");
 const button = document.getElementById("submit");
-const score = document.getElementById("score");
+const p1score = document.getElementById("score1");
+const p2score = document.getElementById("score2");
 const comment = document.getElementById("comment");
 let tally = 0;
 let startAgain = false;
@@ -13,13 +14,13 @@ const resetScore = () => {
     if(startAgain == true){
         comment.textContent = " ";
         tally = 0;
-        score.textContent = tally;
+        score.textContent = tally; // which player
         startAgain = false;
     }
 }
 // checks for winning condition after button clicked and rolled 2-6
 const checkWin = () => {
-    if(score.textContent > 19){
+    if(score.textContent > 19){     // which player
         comment.textContent = "You win!!";
         startAgain = true;
         submit.textContent = "Start";
@@ -43,7 +44,7 @@ submit.addEventListener("click", () => {
             image.src = `img/dice${i}.png`;
             comment.textContent = " ";
             tally += rolled;
-            score.textContent = tally;
+            score.textContent = tally;  // which player
             checkWin();
         }
     }
@@ -51,13 +52,3 @@ submit.addEventListener("click", () => {
 const randNum = () => {
     return (Math.floor(Math.random() * 6) + 1);
 }
-//console.log(randNum);
-
-// Code for genearting a random number 1-6
-// let numList = [];
-
-// for(let i = 0; i < 6; i++){
-//     numList.push(Math.floor(Math.random() * 5) + 1);
-// }
-
-// console.log(numList);
